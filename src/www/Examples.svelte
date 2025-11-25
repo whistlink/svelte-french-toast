@@ -2,7 +2,7 @@
 	import Copy from './Copy.svelte';
 	import examples, { type Example } from './examples';
 
-	let selected: Example['title'] | null = $state('Success');
+	let selected: Example['title'] | null = $state('Warning');
 </script>
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 rounded-xl mb-5">

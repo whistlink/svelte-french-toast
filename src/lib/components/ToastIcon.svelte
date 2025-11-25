@@ -3,6 +3,7 @@
 	import CheckmarkIcon from './CheckmarkIcon.svelte';
 	import ErrorIcon from './ErrorIcon.svelte';
 	import LoaderIcon from './LoaderIcon.svelte';
+	import WarningIcon from './WarningIcon.svelte';
 
 	interface Props {
 		toast: Toast;
@@ -19,11 +20,14 @@
 	<IconComponent />
 {:else if type !== 'blank'}
 	<div class="_sft-indicator">
-		<LoaderIcon {...iconTheme} />
-		{#if type !== 'loading'}
+		{#if type === 'loading'}
+			<LoaderIcon {...iconTheme} />
+		{:else}
 			<div class="_sft-status">
 				{#if type === 'error'}
 					<ErrorIcon {...iconTheme} />
+				{:else if type === 'warning'}
+					<WarningIcon {...iconTheme} />
 				{:else}
 					<CheckmarkIcon {...iconTheme} />
 				{/if}
@@ -44,6 +48,9 @@
 
 	._sft-status {
 		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	._sft-animated {

@@ -105,7 +105,8 @@ const defaultTimeouts: {
 	error: 4000,
 	success: 2000,
 	loading: Infinity,
-	custom: 4000
+	custom: 4000,
+	warning: 4000
 };
 
 export function useToasterStore(toastOptions: DefaultToastOptions = {}): State {

@@ -14,7 +14,7 @@
 
 	let {
 		reverseOrder = false,
-		position = 'top-center',
+		position = 'top-right',
 		toastOptions = undefined,
 		gutter = 8,
 		containerStyle = undefined,

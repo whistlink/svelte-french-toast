@@ -20,6 +20,7 @@ export { default as Toaster } from './components/Toaster.svelte';
 export { default as CheckmarkIcon } from './components/CheckmarkIcon.svelte';
 export { default as ErrorIcon } from './components/ErrorIcon.svelte';
 export { default as LoaderIcon } from './components/LoaderIcon.svelte';
+export { default as WarningIcon } from './components/WarningIcon.svelte';
 export { resolveValue } from './core/types';
 
 export { toast };

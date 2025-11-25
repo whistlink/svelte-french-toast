@@ -22,7 +22,6 @@ const examples: Example[] = [
 		title: 'Error',
 		emoji: '❌',
 		snippet: `toast.error("This didn't work.")`,
-
 		action: () => {
 			toast.error("This didn't work.");
 		}
@@ -151,7 +150,16 @@ const examples: Example[] = [
 				duration: 10000
 			});
 		}
-	}
+	},
+	{
+		title: "Warning",
+		emoji: "⚠️",
+		snippet: `toast.warning('Be careful!')`,
+		action: () => {
+			toast.warning('Be careful!');
+		}
+	},
+
 ];
 
 export default examples;

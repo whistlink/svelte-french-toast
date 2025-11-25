@@ -41,11 +41,11 @@ const createToast = <T extends Record<string, unknown> = Record<string, unknown>
 
 const createHandler =
 	(type?: ToastType): ToastHandler =>
-	(message, options) => {
-		const toast = createToast(message, type, options);
-		upsert(toast);
-		return toast.id;
-	};
+		(message, options) => {
+			const toast = createToast(message, type, options);
+			upsert(toast);
+			return toast.id;
+		};
 
 const toast = <T extends Record<string, unknown> = Record<string, unknown>>(
 	message: Message<T>,
@@ -56,6 +56,7 @@ toast.error = createHandler('error');
 toast.success = createHandler('success');
 toast.loading = createHandler('loading');
 toast.custom = createHandler('custom');
+toast.warning = createHandler('warning');
 
 toast.dismiss = (toastId?: string) => {
 	dismiss(toastId);

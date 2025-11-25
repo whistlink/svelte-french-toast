@@ -12,7 +12,11 @@
 			new Promise((resolve, reject) => {
 				setTimeout(Math.random() < 0.8 ? resolve : reject, 1000);
 			}),
-			{ loading: 'Toasting bread...', success: 'Here’s your toast!', error: 'Your toast burned :(' }
+			{
+				loading: 'Toasting bread...',
+				success: 'Here’s your toast!',
+				error: 'Your toast burned :('
+			}
 		);
 	}
 
@@ -78,7 +82,7 @@
 				<span>Launch toast</span>
 			</button>
 			<a
-				href="https://github.com/kbrgl/svelte-french-toast"
+				href="https://github.com/whistlink/svelte-french-toast.git"
 				class="flex items-center space-x-2 text-gray-500"
 			>
 				<svg class="h-5 w-5" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -150,12 +154,11 @@
 	<h1 class="text-4xl font-bold mb-5">Examples</h1>
 	<Examples />
 	<p class="mt-24 mb-2 text-center">
-		<a href="https://github.com/kbrgl/svelte-french-toast" class="underline">GitHub</a>
+		<a href="https://github.com/whistlink/svelte-french-toast.git" class="underline">GitHub</a>
 	</p>
 	<p class="text-center text-gray-500">
-		© 2022 svelte-french-toast · Built by <a class="text-gray-800" href="https://kabirgoel.com"
-			>Kabir Goel</a
-		>
+		© {new Date().getFullYear()} svelte-french-toast · Built by
+		<a class="text-gray-800" href="https://whistlin.dev">whistlin</a>
 	</p>
 </div>
 
