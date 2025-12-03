@@ -15,12 +15,15 @@
 <style>
 	div {
 		width: 20px;
-		opacity: 0;
 		height: 20px;
-		border-radius: 10px;
-		background: var(--primary, #ff4b4b);
+		border-radius: 50%;
+		background: rgba(255, 75, 75);
 		position: relative;
 		transform: rotate(45deg);
+		opacity: 0;
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 		animation: circleAnimation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 		animation-delay: 100ms;
 	}
@@ -28,22 +31,23 @@
 	div::after,
 	div::before {
 		content: '';
-		animation: firstLineAnimation 0.15s ease-out forwards;
-		animation-delay: 150ms;
 		position: absolute;
-		border-radius: 3px;
-		opacity: 0;
-		background: var(--secondary, #fff);
 		bottom: 9px;
 		left: 4px;
-		height: 2px;
 		width: 12px;
+		height: 2px;
+		border-radius: 1px;
+		opacity: 0;
+		background: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+		animation: firstLineAnimation 0.15s ease-out forwards;
+		animation-delay: 150ms;
 	}
 
 	div:before {
+		transform: rotate(90deg);
 		animation: secondLineAnimation 0.15s ease-out forwards;
 		animation-delay: 180ms;
-		transform: rotate(90deg);
 	}
 
 	@keyframes circleAnimation {

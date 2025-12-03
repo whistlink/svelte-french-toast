@@ -19,9 +19,12 @@
 		position: relative;
 		width: 20px;
 		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: transparent;
 	}
 
-	/* Triangle */
 	.warning-icon::before {
 		content: '';
 		position: absolute;
@@ -34,7 +37,8 @@
 		height: 0;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
-		border-bottom: 18px solid var(--primary, #f59e0b);
+		border-bottom: 18px solid rgba(245, 158, 11, 0.25);
+		border-radius: 2px;
 	}
 
 	.mark {
@@ -43,9 +47,10 @@
 		top: 4px;
 		width: 2px;
 		height: 8px;
-		background: var(--secondary, #fff);
+		background: rgba(255, 255, 255, 0.8);
 		transform: translateX(-50%);
 		border-radius: 1px;
+		box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 	}
 
 	.dot {
@@ -54,8 +59,9 @@
 		bottom: 3px;
 		width: 2px;
 		height: 2px;
-		background: var(--secondary, #fff);
+		background: rgba(255, 255, 255, 0.8);
 		transform: translateX(-50%);
 		border-radius: 50%;
+		box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 	}
 </style>

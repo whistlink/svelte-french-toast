@@ -99,17 +99,22 @@
 	._sft-base {
 		display: flex;
 		align-items: center;
-		background: #fff;
+		background: rgba(255, 255, 255, 0.9);
 		color: #363636;
 		line-height: 1.3;
-		will-change: transform;
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
 		box-shadow:
-			0 3px 10px rgba(0, 0, 0, 0.1),
+			0 8px 32px rgba(0, 0, 0, 0.1),
 			0 3px 3px rgba(0, 0, 0, 0.05);
 		max-width: 350px;
 		pointer-events: auto;
 		padding: 8px 10px;
-		border-radius: 8px;
+		border-radius: 14px;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	._sft-transparent {
