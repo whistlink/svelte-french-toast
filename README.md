@@ -4,7 +4,7 @@
 <img src="https://badgen.net/npm/v/svelte-french-toast" />
 </p>
 <p align="center">
-<a href="https://whistlin-svelte-french-toast.vercel.app/">Website</a> · <a href="https://npmjs.com/package/@whistlin/svelte-french-toast">NPM Package</a>
+<a href="https://whistlin-svelte-french-toast.vercel.app/">Website</a> · <a href="https://npmjs.com/package/@whistlindev/svelte-french-toast">NPM Package</a>
 </p>
 
 # svelte-french-toast
