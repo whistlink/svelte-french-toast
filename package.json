@@ -27,7 +27,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "vite build && pnpm run package",
+		"build": "vite build && npm run package",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"dev": "vite dev",
@@ -35,7 +35,7 @@
 		"lint": "prettier --check . && eslint .",
 		"package": "svelte-kit sync && svelte-package && publint && cp README.md header-image.png dist/",
 		"prepare": "svelte-kit sync",
-		"prepublishOnly": "pnpm run package",
+		"prepublishOnly": "npm run package",
 		"preview": "vite preview",
 		"test": "playwright test",
 		"test:unit": "vitest"
