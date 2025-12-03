@@ -4,7 +4,7 @@
 <img src="https://badgen.net/npm/v/svelte-french-toast" />
 </p>
 <p align="center">
-<a href="https://svelte-french-toast.vercel.app">Website</a> · <a href="https://npmjs.com/package/svelte-french-toast">NPM Package</a>
+<a href="https://whistlin-svelte-french-toast.vercel.app/">Website</a> · <a href="https://npmjs.com/package/@whistlin/svelte-french-toast">NPM Package</a>
 </p>
 
 # svelte-french-toast
@@ -46,7 +46,7 @@ Mount a `<Toaster />` at the top level of your app and use the `toast` API to di
 <button type="button" on:click={handleClick}>Toast</button>
 ```
 
-For more usage examples, see [the website](https://svelte-french-toast.vercel.app).
+For more usage examples, see [the website](https://whistlin-svelte-french-toast.vercel.app/).
 
 ## Thanks
 
