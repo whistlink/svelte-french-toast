@@ -21,10 +21,10 @@
 	}
 
 	const installers = [
-		{ name: 'NPM', cmd: 'npm install svelte-french-toast' },
-		{ name: 'PNPM', cmd: 'pnpm install svelte-french-toast' },
-		{ name: 'Yarn', cmd: 'yarn add svelte-french-toast' },
-		{ name: 'Bun', cmd: 'bun add svelte-french-toast' }
+		{ name: 'npm', cmd: 'npm install @whistlin/svelte-french-toast' },
+		{ name: 'pnpm', cmd: 'pnpm install @whistlin/svelte-french-toast' },
+		{ name: 'yarn', cmd: 'yarn add @whistlin/svelte-french-toast' },
+		{ name: 'bun', cmd: 'bun add @whistlin/svelte-french-toast' }
 	];
 	let installer = $state(installers[0].name);
 </script>
@@ -98,7 +98,7 @@
 		<p
 			class="mt-5 text-sm border rounded-full px-2 py-1 text-gray-500 bg-white/20 backdrop-blur-md border-white/20"
 		>
-			<a href="https://npmjs.com/package/svelte-french-toast">Version {pkg.version}</a>
+			<a href="https://npmjs.com/package/@whistlindev/svelte-french-toast">Version {pkg.version}</a>
 		</p>
 		<div class="grid grid-cols-2 md:grid-cols-3 gap-4 self-stretch mt-10 font-medium">
 			{#each ['Emoji Support', 'Customizable', 'Promise API', 'Pause on hover', 'Accessible', 'Headless use'] as feature}
@@ -172,7 +172,7 @@
 		>
 	</p>
 	<p class="text-center text-gray-500">
-		© {new Date().getFullYear()} svelte-french-toast · Built by
+		© {new Date().getFullYear()} whistlin-svelte-french-toast · Built by
 		<a class="text-gray-800" href="https://whistlin.dev">whistlin</a>
 	</p>
 </div>

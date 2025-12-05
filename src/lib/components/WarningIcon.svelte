@@ -37,7 +37,7 @@
 		height: 0;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
-		border-bottom: 18px solid rgba(245, 158, 11, 0.25);
+		border-bottom: 18px solid rgba(245, 158, 11);
 		border-radius: 2px;
 	}
 
@@ -47,7 +47,7 @@
 		top: 4px;
 		width: 2px;
 		height: 8px;
-		background: rgba(255, 255, 255, 0.8);
+		background: rgba(255, 255, 255);
 		transform: translateX(-50%);
 		border-radius: 1px;
 		box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
@@ -59,7 +59,7 @@
 		bottom: 3px;
 		width: 2px;
 		height: 2px;
-		background: rgba(255, 255, 255, 0.8);
+		background: rgba(255, 255, 255);
 		transform: translateX(-50%);
 		border-radius: 50%;
 		box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);

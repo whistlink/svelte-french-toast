@@ -89,7 +89,7 @@ const examples: Example[] = [
 		action: () => {
 			toast('Hello Darkness!', {
 				icon: '👏',
-				style: 'border-radius: 200px; background: #333; color: #fff;'
+				style: 'background: #333; color: #fff;'
 			});
 		}
 	},
@@ -121,7 +121,7 @@ const examples: Example[] = [
 		title: 'Themed',
 		emoji: '🎨',
 		snippet: `toast.success('Look at me!', {
-	style: 'border: 1px solid #713200; padding: 16px; color: #713200;',
+style: 'border: 1px solid #5a00a3; padding: 16px; color: #5a00a3;'
 	iconTheme: {
 		primary: '#713200',
 		secondary: '#FFFAEE'
@@ -130,7 +130,7 @@ const examples: Example[] = [
 
 		action: () => {
 			toast.success('Look at me!', {
-				style: 'border: 1px solid #713200; padding: 16px; color: #713200;',
+				style: 'border: 1px solid #5a00a3; color: #5a00a3; background: #FFFAEE;',
 				iconTheme: {
 					primary: '#713200',
 					secondary: '#FFFAEE'
