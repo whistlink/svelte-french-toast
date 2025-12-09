@@ -31,8 +31,10 @@
 
 <Toaster />
 
-<div class="py-24 bg-[rgba(250,246,244,0.4)] backdrop-blur-lg border-b border-white/20 ease-in-out">
-	<div class="container max-w-xl flex flex-col items-center mx-auto text-center">
+<div
+	class="py-24 bg-[rgba(250,246,244,0.4)] backdrop-blur-lg border-b border-white/20 transition-all duration-300 ease-in-out shadow-sm"
+>
+	<div class="container max-w-xl flex flex-col items-center mx-auto text-center ease-in-out">
 		<img class="h-16 mb-10" src="favicon.png" alt="" />
 		<div
 			class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-3 mb-10 text-white"
@@ -143,13 +145,13 @@
 				{/each}
 			</div>
 		</div>
-
 		{#each installers as i}
 			<div class:hidden={installer !== i.name}>
 				<code
-					class="language-shell bg-white/20 backdrop-blur-md border border-white/20 rounded-lg p-2 block"
-					>{i.cmd}</code
+					class="language-shell bg-white/20 backdrop-blur-md border border-white/20 rounded-lg p-4 block sm:text-xs whitespace-pre-wrap break-words max-w-full overflow-x-auto"
 				>
+					{i.cmd}
+				</code>
 				<Copy text={i.cmd} />
 			</div>
 		{/each}
