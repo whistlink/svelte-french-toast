@@ -21,10 +21,10 @@
 	}
 
 	const installers = [
-		{ name: 'npm', cmd: 'npm install @whistlin/svelte-french-toast' },
-		{ name: 'pnpm', cmd: 'pnpm install @whistlin/svelte-french-toast' },
-		{ name: 'yarn', cmd: 'yarn add @whistlin/svelte-french-toast' },
-		{ name: 'bun', cmd: 'bun add @whistlin/svelte-french-toast' }
+		{ name: 'npm', cmd: 'npm install @whistlindev/svelte-french-toast' },
+		{ name: 'pnpm', cmd: 'pnpm install @whistlindev/svelte-french-toast' },
+		{ name: 'yarn', cmd: 'yarn add @whistlindev/svelte-french-toast' },
+		{ name: 'bun', cmd: 'bun add @whistlindev/svelte-french-toast' }
 	];
 	let installer = $state(installers[0].name);
 </script>
